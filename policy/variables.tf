@@ -1,18 +1,18 @@
 variable "archetypes" {
-  type        = map
+  type        = map(any)
   description = "A map of configuration overrides for the archetype module"
 }
 
 variable "base_scope_id" {
   type        = string
   description = "The base scope ID for the governance module"
-  
+
 }
 
 variable "scope_id" {
   type        = string
   description = "The base scope ID for the governance module"
-  
+
 }
 variable "root_id" {
   type        = string
@@ -52,12 +52,12 @@ variable "subscription_id_management" {
 }
 
 variable "custom_policy_assignments_from_json" {
-  type        = list
+  type        = list(any)
   description = "A list of custom archetype definitions to be used in place of the built-in definitions."
 }
 
 variable "custom_library_path" {
   type        = string
   description = "If specified, will set the path to the custom library of policy definitions and assignments."
-  
+
 }

@@ -24,14 +24,14 @@ locals {
 
 # Extract the desired Policy Definitions from archetype_policy_definitions_map.
 locals {
-    
+
   archetype_policy_definitions_output = [
     for policy in local.archetype_policy_definitions :
     {
-    #   resource_id = "${local.provider_path.policy_definition}${policy}"
-    #   scope_id    = "/providers/Microsoft.Management/managementGroups/${local.scope_id}"
+      #   resource_id = "${local.provider_path.policy_definition}${policy}"
+      #   scope_id    = "/providers/Microsoft.Management/managementGroups/${local.scope_id}"
       scope_id = "${local.provider_path.management_groups}${local.scope_id}"
-      template    = try(local.builtin_policy_definitions_map_from_json[policy], null)
+      template = try(local.builtin_policy_definitions_map_from_json[policy], null)
     }
   ]
 }

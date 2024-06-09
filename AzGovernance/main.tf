@@ -13,8 +13,8 @@ module "az_governance" {
   # access_control             = var.access_control
   # library_path               = var.library_path
   # template_file_variables    = var.template_file_variables
-  default_location           = var.default_location
-  subscription_id_management = var.subscription_id_management
+  default_location                    = var.default_location
+  subscription_id_management          = var.subscription_id_management
   custom_policy_assignments_from_json = local.custom_policy_assignments_from_json
   # mgmt_resoruce_prefix       = var.mgmt_resoruce_prefix
   custom_library_path = "./lib/custom_assignments"
