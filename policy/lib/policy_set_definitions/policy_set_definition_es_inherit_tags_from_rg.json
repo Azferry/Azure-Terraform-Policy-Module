@@ -1,0 +1,171 @@
+{
+  "properties": {
+    "displayName": "Inherit tags from the resource group",
+    "policyType": "Custom",
+    "description": "Inherits base tags from the resource group level",
+    "metadata": {
+      "category": "Tags",
+      "version": "1.0.0"
+    },
+    "parameters": {
+      "tag_name1": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name1",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name2",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name3": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name3",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name4": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name4",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name5": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name5",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name6": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name6",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name7": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name7",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name8": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name8",
+          "description": "Name of the tag to inherit down"
+        }
+      },
+      "tag_name9": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tag_name9",
+          "description": "Name of the tag to inherit down"
+        }
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_1",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name1')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_2",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name2')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_3",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name3')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_4",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name4')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_5",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name5')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_6",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name6')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_7",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name7')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_8",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name8')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Inherit a tag from the resource group_9",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd3aa116-8754-49c9-a813-ad46512ece54",
+        "parameters": {
+          "tagName": {
+            "value": "[parameters('tag_name9')]"
+          }
+        },
+        "groupNames": []
+      }
+    ],
+    "policyDefinitionGroups": null
+  },
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "Inherit-Tags-RG"
+}

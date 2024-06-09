@@ -1,0 +1,18 @@
+{
+  "name": "Deny-Az-RM-resources",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "apiVersion": "2019-09-01",
+  "properties": {
+    "description": "Classic resources lack Role Based Access Control (RBAC) and other security features that are available in Azure Resource Manager (ARM) model.",
+    "displayName": "Block Azure RM Resource Creation",
+    "notScopes": [],
+    "parameters": {},
+    "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policyDefinitions/Deny-Az-RM-resources",
+    "scope": "${current_scope_resource_id}",
+    "enforcementMode": "Default"
+  },
+  "location": "${default_location}",
+  "identity": {
+    "type": "None"
+  }
+}

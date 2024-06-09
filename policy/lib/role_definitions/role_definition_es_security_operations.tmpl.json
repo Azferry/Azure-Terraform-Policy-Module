@@ -1,0 +1,38 @@
+{
+    "name": "d3584a79-4f0d-5980-aa3c-7a76ba783b76",
+    "type": "Microsoft.Authorization/roleDefinitions",
+    "apiVersion": "2018-01-01-preview",
+    "properties": {
+        "roleName": "Security-Operations",
+        "description": "Security Administrator role with a horizontal view across the entire Azure estate and the Azure Key Vault purge policy.",
+        "type": "customRole",
+        "permissions": [
+            {
+                "actions": [
+                    "*/read",
+                    "*/register/action",
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Authorization/policyAssignments/*",
+                    "Microsoft.Authorization/policyDefinitions/*",
+                    "Microsoft.Authorization/policyExemptions/*",
+                    "Microsoft.Authorization/policySetDefinitions/*",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.Management/managementGroups/read",
+                    "Microsoft.operationalInsights/workspaces/*/read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Security/*",
+                    "Microsoft.Support/*",
+                    "Microsoft.KeyVault/locations/deletedVaults/purge/action",
+                    "Microsoft.PolicyInsights/*"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ],
+        "assignableScopes": [
+            "${current_scope_resource_id}"
+        ]
+    }
+}

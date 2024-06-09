@@ -1,0 +1,25 @@
+{
+    "name": "402344ce-48c4-5ac1-9320-16726150f914",
+    "type": "Microsoft.Authorization/roleDefinitions",
+    "apiVersion": "2018-01-01-preview",
+    "properties": {
+        "roleName": "Cloud Platform Engineer",
+        "description": "Delegated role for Platform Engineer generated from Platform Owner role",
+        "type": "customRole",
+        "permissions": [
+            {
+                "actions": [
+                    "*"
+                ],
+                "notActions": [
+                    "Microsoft.Authorization/elevateAccess/Action"
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ],
+        "assignableScopes": [
+            "${current_scope_resource_id}"
+        ]
+    }
+}

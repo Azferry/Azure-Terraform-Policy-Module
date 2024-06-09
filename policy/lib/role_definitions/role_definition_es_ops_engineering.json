@@ -1,0 +1,29 @@
+{
+    "name": "d3584a79-4f0d-5980-aa3c-7a76ba783b75",
+    "type": "Microsoft.Authorization/roleDefinitions",
+    "apiVersion": "2018-01-01-preview",
+    "properties": {
+        "roleName": "Cloud Ops Engineer",
+        "description": "Cloud Operations Engineering Role",
+        "type": "customRole",
+        "permissions": [
+            {
+                "actions": [
+                    "*",
+                    "Microsoft.Authorization/policyAssignments/*",
+                    "Microsoft.Authorization/policyDefinitions/*",
+                    "Microsoft.Authorization/policyExemptions/*",
+                    "Microsoft.Authorization/policySetDefinitions/*"
+                ],
+                "notActions": [
+                    "Microsoft.Management/managementGroups/delete"
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ],
+        "assignableScopes": [
+            "${current_scope_resource_id}"
+        ]
+    }
+}
