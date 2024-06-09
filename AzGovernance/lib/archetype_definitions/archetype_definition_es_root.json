@@ -1,0 +1,14 @@
+{
+  "es": {
+      "policy_assignments": [
+        "Deny-PublicIP",
+        "Inherit-Tags-RG"
+      ],
+      "policy_definitions": [
+        "Deny-PublicIP"
+      ],
+      "policy_set_definitions": [
+        "Inherit-Tags-RG"
+      ]
+  }
+}
